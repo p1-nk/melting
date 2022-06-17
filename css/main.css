@@ -1,0 +1,23 @@
+ @font-face { font-family: mom; src: url('fonts/mom.ttf'); } 
+
+body{
+	background-color: #191A19;
+	color: white;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+#work{
+	font-family: mom;
+	letter-spacing: 3px;
+	margin-top: 0;
+}
+
+#progress{
+	margin: auto;
+	padding: 0;
+	background-color: #1E5128;
+	width: 50%;
+	height: 100%;
+}
