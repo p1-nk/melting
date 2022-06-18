@@ -1,11 +1,12 @@
  @font-face { font-family: mom; src: url('fonts/mom.ttf'); } 
 
-body{
+body, html{
 	background-color: #191A19;
 	color: white;
 	text-align: center;
 	padding: 0;
 	margin: 0;
+	font-family: mom;
 }
 
 #work{
@@ -21,3 +22,107 @@ body{
 	width: 50%;
 	height: 100%;
 }
+
+h1{margin: 10px;}
+
+.rep_gl{
+	background-image: url("img/glitch.gif");
+	height: 500px;
+	width: 100%;
+	background-repeat: repeat-x;
+	background-position: 1790px;
+	animation: slideleft 9999s infinite linear;
+	background-size: contain;
+}
+
+.rep_gl2{
+	background-image: url("img/glitch.gif");
+	height: 500px;
+	width: 100%;
+	background-repeat: repeat-x;
+	background-position: 1790px;
+	animation: slideright 9999s infinite linear;
+	background-size: contain;
+	position: absolute;
+	top: 60px;
+}
+
+@keyframes slideleft {
+    from {
+        background-position: 0%;
+    }
+    
+    to {
+        background-position: 90000%;
+    }
+}
+
+@keyframes slideright {
+    from {
+        background-position: 0%;
+    }
+    
+    to {
+        background-position: -90000%;
+    }
+}
+
+
+
+.sec2{
+	width: 100%;
+	height: 475px;
+	background-color: #D27389;
+	  background-image: repeating-radial-gradient(circle at center, #D27389, #191A19 0.00085%);
+  animation: tv-static 5s linear infinite;
+  background-position:50% 50%;
+}
+
+#lain1{
+	float: left;
+	margin-right: 0;
+}
+
+#lain2{
+	float: right;
+	margin-left: 0;
+	margin-top: 0;
+	transform: scaleX(-1);
+}
+
+#truth{
+	float: left;
+	text-align: center;
+	font-size: 42px;
+	letter-spacing: 10px;
+	font-family: mom;
+	text-shadow: 30px 30px #000;
+	margin-left: 0;
+	margin-right: 0;
+
+}
+
+#title{
+	font-size: 50px;
+	margin: 0;
+	padding: 0;
+	letter-spacing: 40px;
+	color: black;
+}
+
+#pasek{
+	height: 60px;
+	background-color: #BE6A82;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+@keyframes tv-static {
+  from {
+    background-size: 100% 100%;
+  }
+
+  to {
+    background-size: 200% 200%;
+ }
