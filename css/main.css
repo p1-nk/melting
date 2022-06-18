@@ -1,7 +1,9 @@
  @font-face { font-family: mom; src: url('fonts/mom.ttf'); } 
 
 body, html{
-	background-color: #191A19;
+	background-image: repeating-radial-gradient(circle at center, black, #2e2a2a 0.00085%);
+    animation: tv-static 5s linear infinite;
+    background-position:50% 50%;
 	color: white;
 	text-align: center;
 	padding: 0;
@@ -67,15 +69,13 @@ h1{margin: 10px;}
     }
 }
 
-
-
 .sec2{
 	width: 100%;
 	height: 475px;
 	background-color: #D27389;
-	  background-image: repeating-radial-gradient(circle at center, #D27389, #191A19 0.00085%);
-  animation: tv-static 5s linear infinite;
-  background-position:50% 50%;
+	background-image: repeating-radial-gradient(circle at center, #D27389, #191A19 0.00085%);
+    animation: tv-static 5s linear infinite;
+    background-position:50% 50%;
 }
 
 #lain1{
@@ -116,13 +116,19 @@ h1{margin: 10px;}
 	margin: 0;
 	padding: 0;
 	width: 100%;
+	background-image: url("img/tile1.png");
 }
 
 @keyframes tv-static {
   from {
     background-size: 100% 100%;
   }
-
   to {
     background-size: 200% 200%;
  }
+}
+
+#gLink{
+	text-decoration: none;
+	color: #BE6A82;
+}
